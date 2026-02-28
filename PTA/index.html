@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PTA資料配布ポータル（2026年度）</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="heroInner">
+        <div class="heroTop">
+          <div>
+            <h1>PTA資料配布ポータル（2026年度）</h1>
+            <p>
+              LINEで受け取ったZIPを展開したら、この <b>index.html</b> を開いてください。<br>
+              スマホでもPCでも、ここから <b>PDFへ直接</b> 開けます（フォルダ移動なし）。
+            </p>
+          </div>
+          <button class="smallBtn" id="expandAll" type="button">全部ひらく</button>
+        </div>
+
+        <div class="meta">
+          <div class="pill">📱 スマホ最適（PDF直リンク）</div>
+          <div class="pill">💻 PC快適（検索/2カラム）</div>
+          <div class="pill">🔒 配布はPDFのみ</div>
+        </div>
+
+        <div class="search">
+          🔎 <input id="q" type="search" placeholder="資料名で検索（例：議案書 / 給食 / 1年 / 締切）" />
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+
+      <!-- 重要 -->
+      <section class="card span2">
+        <div class="cardHead">
+          <h2>重要なお知らせ</h2>
+        </div>
+        <div class="cardBody">
+          <div class="note">
+            <b>運用のコツ：</b>ここに重要な書類を配置<br>
+            例：総会案内、締切、提出物一覧、当日の持ち物など。
+          </div>
+
+          <ul class="list" style="padding:12px 0 0;">
+            <li class="item doc" data-keys="重要 お知らせ 総会 締切">
+              <div class="itemMain">
+                <p class="itemTitle">重要_お知らせ.pdf</p>
+                <p class="itemDesc">総会日程・当日案内・注意事項</p>
+              </div>
+              <a class="btn" href="本部/重要_お知らせ.pdf">開く</a>
+            </li>
+
+            <li class="item doc" data-keys="提出物 一覧 締切 回収">
+              <div class="itemMain">
+                <p class="itemTitle">提出物_一覧.pdf</p>
+                <p class="itemDesc">提出物の締切と提出先</p>
+              </div>
+              <a class="btn" href="本部/提出物_一覧.pdf">開く</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 左：本部 -->
+      <section class="card">
+        <div class="cardHead"><h2>本部</h2></div>
+        <div class="cardBody">
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">本</div>
+                <div class="sumText">
+                  <div class="sumTitle">議事録・総会・全体連絡</div>
+                  <div class="sumSub">本部の配布資料（PDF）</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="本部 議事録 最新">
+                <div class="itemMain">
+                  <p class="itemTitle">0220_本部会議_議事録_第8回.pdf</p>
+                  <p class="itemDesc">最新の議事録</p>
+                </div>
+                <a class="btn" href="本部/議事録/0220_本部会議_議事録_第8回.pdf">開く</a>
+              </li>
+
+              <li class="item doc" data-keys="総会 議案書 予算 活動報告">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_総会_議案書.pdf</p>
+                  <p class="itemDesc">総会資料（例）</p>
+                </div>
+                <a class="btn" href="本部/2026_総会_議案書.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">広</div>
+                <div class="sumText">
+                  <div class="sumTitle">広報</div>
+                  <div class="sumSub">すぐーる広報資料（PDF）</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="はぐくみ 卒業 給食 レシピ">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_給食レシピ広報_卒業生向け_3.pdf</p>
+                  <p class="itemDesc">2026_卒業号_給食レシピ</p>
+                </div>
+                <a class="btn" href="本部/広報/2026_給食レシピ広報_卒業生向け_3.pdf">開く</a>
+              </li>
+            </ul>
+            <ul class="list">
+              <li class="item doc" data-keys="はぐくみ第1号">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_はぐくみ_1.pdf</p>
+                  <p class="itemDesc">2026_4月号</p>
+                </div>
+                <a class="btn" href="本部/広報/2026_はぐくみ_1.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+        </div>
+      </section>
+
+      <!-- 右：委員会（選考・保健給食・地域） -->
+      <section class="card">
+        <div class="cardHead"><h2>委員会</h2></div>
+        <div class="cardBody">
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">選</div>
+                <div class="sumText">
+                  <div class="sumTitle">選考委員</div>
+                  <div class="sumSub">役員選出・選考関連</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="選考 役員 選出 お知らせ">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_選考_お知らせ.pdf</p>
+                  <p class="itemDesc">（例）選考に関する案内</p>
+                </div>
+                <a class="btn" href="選考委員/2026_選考_お知らせ.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">給</div>
+                <div class="sumText">
+                  <div class="sumTitle">保健給食委員</div>
+                  <div class="sumSub">保健・給食・検診関連</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="保健 給食 検診 お知らせ">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_保健給食_検診案内.pdf</p>
+                  <p class="itemDesc">（例）検診案内</p>
+                </div>
+                <a class="btn" href="保健給食委員/2026_保健給食_検診案内.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">地</div>
+                <div class="sumText">
+                  <div class="sumTitle">地域委員</div>
+                  <div class="sumSub">地域連携・安全・見守り</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="地域 安全 見守り 連携">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_地域_見守り当番.pdf</p>
+                  <p class="itemDesc">（例）見守り当番表</p>
+                </div>
+                <a class="btn" href="地域委員/2026_地域_見守り当番.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+        </div>
+      </section>
+
+      <!-- 学級委員 -->
+      <section class="card span2">
+        <div class="cardHead"><h2>学級委員（1〜6年＋特支）</h2></div>
+        <div class="cardBody">
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">1</div>
+                <div class="sumText">
+                  <div class="sumTitle">1年</div>
+                  <div class="sumSub">学年行事・配布物</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="1年 学年 お知らせ 行事">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_1年_お知らせ.pdf</p>
+                  <p class="itemDesc">1年向け配布資料</p>
+                </div>
+                <a class="btn" href="学級委員/1年/2026_1年_お知らせ.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">2</div>
+                <div class="sumText">
+                  <div class="sumTitle">2年</div>
+                  <div class="sumSub">学年行事・配布物</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="2年 学年 お知らせ 行事">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_2年_お知らせ.pdf</p>
+                  <p class="itemDesc">2年向け配布資料</p>
+                </div>
+                <a class="btn" href="学級委員/2年/2026_2年_お知らせ.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">3</div>
+                <div class="sumText">
+                  <div class="sumTitle">3年</div>
+                  <div class="sumSub">学年行事・配布物</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="3年 学年 お知らせ 行事">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_3年_お知らせ.pdf</p>
+                  <p class="itemDesc">3年向け配布資料</p>
+                </div>
+                <a class="btn" href="学級委員/3年/2026_3年_お知らせ.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">4</div>
+                <div class="sumText">
+                  <div class="sumTitle">4年</div>
+                  <div class="sumSub">学年行事・配布物</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="4年 学年 お知らせ 行事">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_4年_お知らせ.pdf</p>
+                  <p class="itemDesc">4年向け配布資料</p>
+                </div>
+                <a class="btn" href="学級委員/4年/2026_4年_お知らせ.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">5</div>
+                <div class="sumText">
+                  <div class="sumTitle">5年</div>
+                  <div class="sumSub">学年行事・配布物</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="5年 学年 お知らせ 行事">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_5年_お知らせ.pdf</p>
+                  <p class="itemDesc">5年向け配布資料</p>
+                </div>
+                <a class="btn" href="学級委員/5年/2026_5年_お知らせ.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">6</div>
+                <div class="sumText">
+                  <div class="sumTitle">6年</div>
+                  <div class="sumSub">学年行事・配布物</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="6年 学年 お知らせ 行事">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_6年_お知らせ.pdf</p>
+                  <p class="itemDesc">6年向け配布資料</p>
+                </div>
+                <a class="btn" href="学級委員/6年/2026_6年_お知らせ.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <!-- 3〜6年・特支：同様に増やす（必要資料が増えたらliを追加） -->
+          <details class="group">
+            <summary>
+              <div class="sumLeft">
+                <div class="badge">特</div>
+                <div class="sumText">
+                  <div class="sumTitle">特支</div>
+                  <div class="sumSub">特別支援関連</div>
+                </div>
+              </div>
+              <div class="chev">▾</div>
+            </summary>
+            <ul class="list">
+              <li class="item doc" data-keys="特支 特別支援 お知らせ">
+                <div class="itemMain">
+                  <p class="itemTitle">2026_特支_お知らせ.pdf</p>
+                  <p class="itemDesc">（例）特別支援向け配布資料</p>
+                </div>
+                <a class="btn" href="学年委員/特支/2026_特支_お知らせ.pdf">開く</a>
+              </li>
+            </ul>
+          </details>
+
+          <div class="note">
+            <b>増やし方：</b>PDFが増えたら、該当学年の中に「同じ形の行（li）」を追加するだけ。<br>
+          </div>
+        </div>
+      </section>
+
+      <!-- 配布手順 -->
+      <section class="card span2">
+        <div class="cardHead"><h2>配布手順（LINE / PC 共通）</h2></div>
+        <div class="cardBody">
+          <div class="note">
+            ① フォルダ <b>PTA_配布パッケージ_2026</b> を <b>ZIP</b> にする<br>
+            ② LINEで <b>ZIP1つ</b> を送る（資料をバラで送らない）<br>
+            ③ 受け取った側：保存 → 展開 → <b>index.html</b> を開く<br>
+            ✅ スマホでもPCでも、ここからPDFを開けます。
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="footer">© PTA：スマホ（LINE）優先＋PC最適化（検索/レイアウト）</div>
+
+  </div>
+
+<script>
+  // 検索：資料名/説明/keywordsでフィルタ
+  const q = document.getElementById('q');
+  const docs = Array.from(document.querySelectorAll('.doc'));
+  const groups = Array.from(document.querySelectorAll('details.group'));
+
+  function norm(s){
+    return (s || '').toLowerCase().replace(/\s+/g,'').trim();
+  }
+
+  function applyFilter(){
+    const key = norm(q.value);
+    docs.forEach(el => {
+      const text = norm(el.innerText + ' ' + (el.dataset.keys || ''));
+      el.classList.toggle('hidden', key && !text.includes(key));
+    });
+
+    // グループ内に表示項目がなければ、そのグループを折りたたみ＋薄くする
+    groups.forEach(d => {
+      const visible = Array.from(d.querySelectorAll('.doc')).some(x => !x.classList.contains('hidden'));
+      d.style.opacity = key && !visible ? '0.45' : '1';
+      if(key && visible) d.open = true;
+    });
+  }
+
+  q.addEventListener('input', applyFilter);
+
+  // 全部ひらく / たたむ
+  const btn = document.getElementById('expandAll');
+  let expanded = false;
+  btn.addEventListener('click', () => {
+    expanded = !expanded;
+    groups.forEach(d => d.open = expanded);
+    btn.textContent = expanded ? '全部たたむ' : '全部ひらく';
+  });
+</script>
+
+</body>
+</html>
